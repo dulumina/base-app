@@ -180,7 +180,7 @@ function addMenu() {
   $("#single").attr('checked', 'checked');
   let select = $('#selectParent');
   select.empty(); // remove old options
-  select.append($("<option value='0'>default</option>"))
+  select.append($("<option value='0'></option>"))
   $.each(parrentMenu, function(key, obj) {
     select.append($("<option value='" + obj.id + "'>" + obj.name + "</option>"))
   });
@@ -197,7 +197,7 @@ function editMenu(id) {
   $("#" + menu.type).attr('checked', 'checked');
   let select = $('#selectParent');
   select.empty(); // remove old options
-  select.append($("<option value='0'>default</option>"))
+  select.append($("<option value='0'></option>"))
   $.each(parrentMenu, function(key, obj) {
     if (obj.id == menu.parent) {
       select.append($("<option value='" + obj.id + "' selected>" + obj.name + "</option>"))

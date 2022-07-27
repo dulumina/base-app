@@ -47,6 +47,8 @@ $routes->group('',[], function($routes) {
 $routes->group('',['filter' => 'FilterAuth'], function($routes) {
     $routes->get('/dashboard', 'Dashboard::index');
     $routes->get('/home', 'Home::index');
+    $routes->get('/Profile', 'Profile::index');
+
 });
 
 $routes->group('settings',['filter' => 'FilterAuth'], function($routes) {
@@ -55,6 +57,7 @@ $routes->group('settings',['filter' => 'FilterAuth'], function($routes) {
     // });
     $routes->get('menu', 'settings\Menu::index');
 });
+
 
 $routes->get('uploads/(:any)', 'Files::show/$1');
 

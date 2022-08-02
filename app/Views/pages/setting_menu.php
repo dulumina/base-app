@@ -40,7 +40,7 @@
   <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Settings /</span> Menu</h4>
 
   <!-- Accordion -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
   <div class="row">
     <div class="col-md-4">
       <div class="card">

@@ -14,7 +14,7 @@ class Menus extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['name', 'link', 'icon', 'type', 'parent'];
 
     // Dates
     protected $useTimestamps = false;

@@ -55,7 +55,12 @@ $routes->group('settings',['filter' => 'FilterAuth'], function($routes) {
     // $routes->get('menu',function(){
     //     echo "okee";
     // });
-    $routes->get('menu', 'settings\Menu::index');
+    $routes->get('menu', 'settings\Menu::index')
+           ->post('menu/add', 'settings\Menu::add');
+    $routes->get('groups', 'settings\Group::index');
+    // $routes->get('groups', function(){
+    //     echo "okee";
+    // });
 });
 
 
